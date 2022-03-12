@@ -18,7 +18,37 @@ El siguiente rol a crear es el de **cloudformation** el cual nos permite hacer e
 ![](./img/3.png)
 
  ## 2. Configuración
-Crear el pipeline con la herramienta codePipeline
+Crear el pipeline con la herramienta **codePipeline** y se selecciona el rol creado anteriormente
 
 ![](./img/4.png)
 
+Se procede a realizar la conexión del repositorio de gitHub, como se muestra a continuación
+
+![](./img/5.png)
+ 
+Para la configuración de cloudformation se necesita la plantilla creada llamada **demoAWS.json** y el rol llamado **cloudformation_s3** creado anteriormente
+
+![](./img/6.png)
+
+A continuación podemos evidenciar el resumen de la configutacion creada y la creación del pipeline.
+
+![](./img/7.png)
+
+Para que funcione correctamente se debe agregar el siguiente permiso a cada rol
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "codestar-connections:UseConnection",
+            "Resource": "arn:aws:codestar-connections:sa-east-1:244937477184:connection/69b25c8e-7afe-47de-b963-5d55817e8751"
+        }
+    ]
+}
+```
+
+El pipeline se empezara a ejecutar y debe salir exitosa como se muestra a continuación
+
+![](./img/8.png)
