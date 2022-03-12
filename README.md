@@ -17,3 +17,8 @@ El siguiente rol a crear es el de **cloudformation** el cual nos permite hacer e
 
 ![](./img/3.png)
 
+ ## 2. Configuración
+Crear el pipeline con la herramienta codePipeline
+
+![](./img/4.png)
+
