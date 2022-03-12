@@ -52,3 +52,12 @@ Para que funcione correctamente se debe agregar el siguiente permiso a cada rol
 El pipeline se empezara a ejecutar y debe salir exitosa como se muestra a continuación
 
 ![](./img/8.png)
+
+Cada vez que se actualiza la rama, se puede evidenciar que se realiza el deploy automatico. 
+
+![](./img/9.png)
+
+![](./img/10.png)
+
+
+**Se utilizaron las tecnologias descritas anteriormente principalmente porque son las tecnologias en las cuales tengo mas conocimiento, aclarando que AWS CloudFormation y Jenkins son muy utilizadas y con ambas se lograria una buena implementacion de automatización.**
